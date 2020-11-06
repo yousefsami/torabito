@@ -311,7 +311,7 @@
             <div class="col-md-6 social-items">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/torabian/torabito">
                     <img src="./assets/images/github.svg" />
                   </a>
                 </li>
@@ -349,35 +349,35 @@
     crossorigin="anonymous"
   ></script>
   <script>
-    var OSName = 'Windows';
-    var OSHref = 'windows-x86.exe';
-    if (navigator.appVersion.indexOf('Win') != -1) {
-      OSName = 'Windows';
+    var OSName = "Windows";
+    var OSHref = "windows-x86.exe";
+    if (navigator.appVersion.indexOf("Win") != -1) {
+      OSName = "Windows";
       if (
-        navigator.userAgent.indexOf('Win64') != -1 &&
-        navigator.userAgent.indexOf('x64') != -1
+        navigator.userAgent.indexOf("Win64") != -1 &&
+        navigator.userAgent.indexOf("x64") != -1
       ) {
-        OSHref = 'windows-x64.exe';
+        OSHref = "windows-x64.exe";
       } else {
-        OSHref = 'windows-x86.exe';
+        OSHref = "windows-x86.exe";
       }
     }
-    if (navigator.appVersion.indexOf('Mac') != -1) {
-      OSName = 'MacOS';
-      OSHref = 'maxos.pkg';
+    if (navigator.appVersion.indexOf("Mac") != -1) {
+      OSName = "MacOS";
+      OSHref = "maxos.pkg";
     }
-    if (navigator.appVersion.indexOf('X11') != -1) {
-      OSName = 'UNIX';
-      OSHref = 'unix.rpm';
+    if (navigator.appVersion.indexOf("X11") != -1) {
+      OSName = "UNIX";
+      OSHref = "unix.rpm";
     }
-    if (navigator.appVersion.indexOf('Linux') != -1) {
-      OSName = 'Linux';
-      OSHref = 'linux.deb';
+    if (navigator.appVersion.indexOf("Linux") != -1) {
+      OSName = "Linux";
+      OSHref = "linux.deb";
     }
 
     document
-      .getElementById('download-client-platform')
-      .setAttribute('href', './' + OSHref);
-    document.getElementById('client-platform').innerText = OSName;
+      .getElementById("download-client-platform")
+      .setAttribute("href", "./" + OSHref);
+    document.getElementById("client-platform").innerText = OSName;
   </script>
 </html>
