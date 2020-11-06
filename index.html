@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torabito IOT Dashboard</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!---------- Navbar Section ----------->
+    <div class="navbar-section">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/favicon/favicon-32x32.png" alt="" />
+            Torabito IOT Dashboard
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Updates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Learn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!---------- //Navbar Section ----------->
+
+    <div class="main-content">
+      <!---------- Update Banner Section ----------->
+      <div class="updates-banner">
+        <div class="container">
+          <p class="message">
+            <a href="#">Version 1.0.1</a> is now available! Read about the new
+            features and fixes.
+          </p>
+        </div>
+      </div>
+      <!---------- Update Banner Section ----------->
+      <!---------- Header Section ----------->
+      <div class="header-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 left-header">
+              <h1>Monitor, Manage. <strong>Your Devices.</strong></h1>
+              <div class="lead">
+                <p><span>Free for strudents. Runs everywhere.</span></p>
+              </div>
+              <div class="download-buttons">
+                <a id="download-client-platform" class="primary-button">
+                  <div>
+                    Download for <span id="client-platform"></span>
+                    <small class="build-type">Stable Build</small>
+                  </div>
+                  <img src="./assets/images/download.svg" />
+                </a>
+                <a href="#" class="download-matrix-label">
+                  Or Download For Other Platforms
+                </a>
+                <p class="terms">
+                  By using IOT Dashboard, you agree to its
+                  <a href="#">license and privacy statement</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="screenshot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------- //Header Section ----------->
+      <!---------- Versions   Section ----------->
+      <div class="gray-section">
+        <div class="versions-section">
+          <div class="container">
+            <div class="row">
+              <div class="version-container">
+                <div class="row">
+                  <div class="platform col-md-4">
+                    <img
+                      class="platform-logo"
+                      src="./assets/images/windows-logo.png"
+                    />
+                    <table class="download-list">
+                      <tr>
+                        <td colspan="2">
+                          <span class="supported-version"
+                            >Windows 7, 8, 10</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Installer(.exe)</td>
+                        <td>
+                          <a href="#">64 bit</a>
+                          <a href="#">32 bit</a>
+                          <a href="#">ARM</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>.zip</td>
+                        <td>
+                          <a href="#">64 bit</a>
+                          <a href="#">32 bit</a>
+                          <a href="#">ARM</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="platform col-md-4">
+                    <img
+                      class="platform-logo"
+                      src="./assets/images/linux-logo.png"
+                    />
+                    <table class="download-list">
+                      <tr>
+                        <td colspan="2">
+                          <span class="supported-version"
+                            >Debian, Ubuntu, Raspberry PI</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>.deb</td>
+                        <td>
+                          <a href="#">64 bit</a>
+                          <a href="#">ARM</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>.rpm</td>
+                        <td>
+                          <a href="#">64 bit</a>
+                          <a href="#">ARM</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>.tar.gz</td>
+                        <td>
+                          <a href="#">64 bit</a>
+                          <a href="#">ARM</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="platform col-md-4">
+                    <img
+                      class="platform-logo"
+                      src="./assets/images/apple-logo.png"
+                    />
+                    <table class="download-list">
+                      <tr>
+                        <td colspan="2">
+                          <span class="supported-version">macOS 10.10+</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Installer(.pkg)</td>
+                        <td>
+                          <a href="#">64 bit</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>.tar.gz</td>
+                        <td>
+                          <a href="#">64 bit</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---------- //Versions Section ----------->
+        <div class="brief-description-wrapper">
+          <div class="container">
+            <div class="row align-item-center">
+              <div class="col-lg-6">
+                <img
+                  class="brief-description-image"
+                  src="./assets/images/3d.png"
+                />
+              </div>
+              <div class="col-lg-6 brief-description">
+                <h1>Why Should I Use Torabito?</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------- Footer Section ----------->
+      <div class="footer-section">
+        <div class="container">
+          <div class="row align-item-center">
+            <div class="col-md-6 copy-right">
+              <p>© 2020 Torabito Inc. All rights reserved</p>
+              | <a href="./docker-terms-service">Terms of Service</a> |
+              <a href="./privacy">Privacy</a> | <a href="./legal">Legal</a>
+            </div>
+            <div class="col-md-6 social-items">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/github.svg" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/linkedin.svg" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/youtube.svg" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------- //Footer Section ----------->
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    var OSName = 'Windows';
+    var OSHref = 'windows-x86.exe';
+    if (navigator.appVersion.indexOf('Win') != -1) {
+      OSName = 'Windows';
+      if (
+        navigator.userAgent.indexOf('Win64') != -1 &&
+        navigator.userAgent.indexOf('x64') != -1
+      ) {
+        OSHref = 'windows-x64.exe';
+      } else {
+        OSHref = 'windows-x86.exe';
+      }
+    }
+    if (navigator.appVersion.indexOf('Mac') != -1) {
+      OSName = 'MacOS';
+      OSHref = 'maxos.pkg';
+    }
+    if (navigator.appVersion.indexOf('X11') != -1) {
+      OSName = 'UNIX';
+      OSHref = 'unix.rpm';
+    }
+    if (navigator.appVersion.indexOf('Linux') != -1) {
+      OSName = 'Linux';
+      OSHref = 'linux.deb';
+    }
+
+    document
+      .getElementById('download-client-platform')
+      .setAttribute('href', './' + OSHref);
+    document.getElementById('client-platform').innerText = OSName;
+  </script>
+</html>
