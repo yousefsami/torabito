@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Torabito IOT Dashboard</title>
+    <title>
+      Torabito IOT Platform - Monitoring and Controlling devices for enterprise
+      and hobbyists
+    </title>
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -322,15 +325,13 @@
                 />
               </div>
               <div class="col-lg-6 brief-description">
-                <h1>Why Should I Use Torabito?</h1>
+                <h1>Start with Torabito</h1>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
+                  Torabito is a client side software which helps to control IOT
+                  Devices using different protocols, such as UDP and SerialPort.
+                  As hobbyist you can download the softare and read SerialPort
+                  and UDP information from Arduino, NodeMCU and other devices
+                  which support SerialPort or UDP over internal networks.
                 </p>
               </div>
             </div>
@@ -343,8 +344,11 @@
           <div class="container">
             <div class="section-title row align-item-center">
               <div class="col-md-12 text-center">
-                <h2><strong>Features</strong> Of Torabito IOT Dashboard</h2>
-                <p>Iot Dashboad features</p>
+                <h2><strong>Torabito IOT</strong> capabilities</h2>
+                <p>
+                  See quickly what kind of value torabito iot suite can bring
+                  for you.
+                </p>
               </div>
             </div>
             <div class="row">
@@ -358,42 +362,36 @@
                     class="scroll-to list-group-item list-group-item-action"
                     href="#list-item-1"
                   >
-                    <h3>Import CSV</h3>
+                    <h3>Import External history</h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries
+                      Import data recorded from different devices which do not
+                      support internet or modern communication protocols.
+                      Torabito will automatically detect data types, and build a
+                      data history that you can make reports out of those
+                      records. These data can be added dynamically as CSV files.
                     </p>
                   </a>
                   <a
                     class="scroll-to list-group-item list-group-item-action"
                     href="#list-item-2"
                   >
-                    <h3>Monitor Devices</h3>
+                    <h3>SerialPort reader</h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries
+                      Torabito software can listen to serialports, and convert
+                      the data coming from them in realtime to different
+                      structure and record them. Useful for devices which send
+                      information such as temperature to specific serialport.
                     </p>
                   </a>
                   <a
                     class="scroll-to list-group-item list-group-item-action"
                     href="#list-item-3"
                   >
-                    <h3>Control Devices</h3>
+                    <h3>UDP Listener</h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries
+                      With torabito you can listen to infinite udp ports, and
+                      record or monitor the incoming information into your
+                      desired database.
                     </p>
                   </a>
                 </div>
@@ -461,8 +459,8 @@
               <div class="col-md-12 text-center">
                 <h2><strong>Meet</strong> Our Team</h2>
                 <p>
-                  These people are the reasons for our success and stainless
-                  reputation.
+                  People who work hard for this project to make IOT cheaper for
+                  everyone.
                 </p>
               </div>
             </div>
@@ -477,11 +475,13 @@
                   <h3 class="member-name">Ali Torabi</h3>
                   <p class="member-position">Software Engineer</p>
                   <p class="about-member">
-                    As a team leader and founder, I am active in many areas of
-                    technical stack, such front-end, mobile app, server
-                    management and team coordination. There are many challenges
-                    on front-end, such as making assuring all clients with
-                    different type of browsers can receive the application.
+                    Ali is a programmer who believe that programming is his best
+                    hobby. He is JavaScript proficient but also has some
+                    interest in 3D Design, embedded programming and
+                    manufactering processs.
+                    <br />He has experience of working in many countries, such
+                    as Iran, Malaysia, Thailand and Poland and believe despite
+                    the differences, in languages, message is the same.
                   </p>
                   <a
                     class="member-socials"
@@ -510,10 +510,10 @@
                   <h3 class="member-name">Yousef Sami</h3>
                   <p class="member-position">Developer, Designer</p>
                   <p class="about-member">
-                    As a senior JavaScript developer I was working on two
-                    different frontend project - react and Angular. I was
-                    delivering new features, maintaining the existing one and
-                    deploy to the production.
+                    Yousef is a dedicated person with vast knowledge in
+                    different areas of programming. Despite of experience in
+                    many languages, JavaScript and Java are his main skills. He
+                    believes that IOT is the future of automation
                   </p>
                   <a
                     class="member-socials"
@@ -1566,12 +1566,12 @@
 
   <script>
     $(document).ready(function () {
-      $('.scroll-to').on('click', function (event) {
-        if (this.hash !== '') {
+      $(".scroll-to").on("click", function (event) {
+        if (this.hash !== "") {
           event.preventDefault();
           var hash = this.hash;
-          var offset = $(this).data('offset');
-          $('html, body').animate(
+          var offset = $(this).data("offset");
+          $("html, body").animate(
             {
               scrollTop: $(hash).offset().top - (offset || 80),
             },
@@ -1588,43 +1588,43 @@
         });
       };
 
-      $('.header-section').mousemove(function (e) {
-        $('.slide1').parallax(60, e);
-        $('.slide2').parallax(-60, e);
+      $(".header-section").mousemove(function (e) {
+        $(".slide1").parallax(60, e);
+        $(".slide2").parallax(-60, e);
       });
 
-      $('body').scrollspy({ target: '#list-spy', offset: 150 });
+      $("body").scrollspy({ target: "#list-spy", offset: 150 });
     });
 
-    var OSName = 'Windows';
-    var OSHref = 'windows-x86.exe';
-    if (navigator.appVersion.indexOf('Win') != -1) {
-      OSName = 'Windows';
+    var OSName = "Windows";
+    var OSHref = "windows-x86.exe";
+    if (navigator.appVersion.indexOf("Win") != -1) {
+      OSName = "Windows";
       if (
-        navigator.userAgent.indexOf('Win64') != -1 &&
-        navigator.userAgent.indexOf('x64') != -1
+        navigator.userAgent.indexOf("Win64") != -1 &&
+        navigator.userAgent.indexOf("x64") != -1
       ) {
-        OSHref = 'windows-x64.exe';
+        OSHref = "windows-x64.exe";
       } else {
-        OSHref = 'windows-x86.exe';
+        OSHref = "windows-x86.exe";
       }
     }
-    if (navigator.appVersion.indexOf('Mac') != -1) {
-      OSName = 'MacOS';
-      OSHref = 'maxos.pkg';
+    if (navigator.appVersion.indexOf("Mac") != -1) {
+      OSName = "MacOS";
+      OSHref = "maxos.pkg";
     }
-    if (navigator.appVersion.indexOf('X11') != -1) {
-      OSName = 'UNIX';
-      OSHref = 'unix.rpm';
+    if (navigator.appVersion.indexOf("X11") != -1) {
+      OSName = "UNIX";
+      OSHref = "unix.rpm";
     }
-    if (navigator.appVersion.indexOf('Linux') != -1) {
-      OSName = 'Linux';
-      OSHref = 'linux.deb';
+    if (navigator.appVersion.indexOf("Linux") != -1) {
+      OSName = "Linux";
+      OSHref = "linux.deb";
     }
 
     document
-      .getElementById('download-client-platform')
-      .setAttribute('href', './' + OSHref);
-    document.getElementById('client-platform').innerText = OSName;
+      .getElementById("download-client-platform")
+      .setAttribute("href", "./" + OSHref);
+    document.getElementById("client-platform").innerText = OSName;
   </script>
 </html>
