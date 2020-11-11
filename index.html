@@ -145,8 +145,8 @@
       <div class="updates-banner">
         <div class="container">
           <p class="message">
-            <a href="#">Version 1.0.1</a> is now available! Read about the new
-            features and fixes.
+            <strong>Version 1.0.1</strong> is now available! You can download
+            the latest version of Torabito IOT Dashboard.
           </p>
         </div>
       </div>
@@ -176,7 +176,12 @@
                   </div>
                   <img src="./assets/images/download.svg" />
                 </a>
-                <a href="#versioning" class="scroll-to download-matrix-label">
+
+                <a
+                  href="#versioning"
+                  data-offset="150"
+                  class="scroll-to download-matrix-label"
+                >
                   Or Download For Other Platforms
                 </a>
                 <p class="terms">
@@ -339,11 +344,11 @@
             <div class="section-title row align-item-center">
               <div class="col-md-12 text-center">
                 <h2><strong>Features</strong> Of Torabito IOT Dashboard</h2>
-                <p></p>
+                <p>Iot Dashboad features</p>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-lg-4 d-none d-lg-block">
                 <div
                   id="list-spy"
                   class="list-group"
@@ -393,7 +398,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-lg-8">
                 <div
                   data-spy="scroll"
                   data-target="#list-spy"
@@ -401,31 +406,46 @@
                   class="scrollspy"
                 >
                   <div id="list-item-1">
-                    <img
-                      srcset="
-                        https://cfl.dropboxstatic.com/static/images/index/zeus/product_tour/home-producttour-organized-en@2x-vflxsVHIn.png 2x
-                      "
-                      alt="Dropbox interfaces for file and folder organization, scheduling meetings and adding attachments."
-                      src="https://cfl.dropboxstatic.com/static/images/index/zeus/product_tour/home-producttour-organized-en-vflGKUjXB.png"
-                    />
+                    <img src="./assets/images/list-2.png" />
+                    <div class="d-block d-lg-none">
+                      <h3>Import CSV</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries
+                      </p>
+                    </div>
                   </div>
                   <div id="list-item-2">
-                    <img
-                      srcset="
-                        https://cfl.dropboxstatic.com/static/images/index/zeus/product_tour/home-producttour-focused-en@2x-vflMwOK-r.png 2x
-                      "
-                      alt="Multiple Dropbox interfaces for intelligent file suggestions."
-                      src="https://cfl.dropboxstatic.com/static/images/index/zeus/product_tour/home-producttour-focused-en-vflpskGfi.png"
-                    />
+                    <img src="./assets/images/list-1.png" />
+                    <div class="d-block d-lg-none">
+                      <h3>Monitor Devices</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries
+                      </p>
+                    </div>
                   </div>
                   <div id="list-item-3">
-                    <img
-                      srcset="
-                        https://cfl.dropboxstatic.com/static/images/index/zeus/product_tour/home-producttour-insync-en@2x-vflndkuqv.png 2x
-                      "
-                      alt="A Dropbox folder with files and latest activity from collaborators inside."
-                      src="https://cfl.dropboxstatic.com/static/images/index/zeus/product_tour/home-producttour-insync-en-vflBwDdvq.png"
-                    />
+                    <img src="./assets/images/list-3.png" />
+                    <div class="d-block d-lg-none">
+                      <h3>Control Devices</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -439,7 +459,7 @@
           <div class="container">
             <div class="section-title row align-item-center">
               <div class="col-md-12 text-center">
-                <h2><strong>Members</strong> Of Our</h2>
+                <h2><strong>Meet</strong> Our Team</h2>
                 <p>
                   These people are the reasons for our success and stainless
                   reputation.
@@ -455,7 +475,7 @@
                     alt="Ali Torabi"
                   />
                   <h3 class="member-name">Ali Torabi</h3>
-                  <p class="member-position">Co-Founder, CEO, Lead Developer</p>
+                  <p class="member-position">Software Engineer</p>
                   <p class="about-member">
                     As a team leader and founder, I am active in many areas of
                     technical stack, such front-end, mobile app, server
@@ -1573,7 +1593,7 @@
         $('.slide2').parallax(-60, e);
       });
 
-      $('body').scrollspy({ target: '#list-spy', offset: 100 });
+      $('body').scrollspy({ target: '#list-spy', offset: 150 });
     });
 
     var OSName = 'Windows';
