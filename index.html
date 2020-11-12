@@ -231,12 +231,12 @@
                         <td>Installer(.exe)</td>
                         <td>
                           <a
-                            href="./releases/torabito-win32-x64.exe"
+                            href="https://github.com/yousefsami/torabito-installers/raw/master/torabito-win32-x64/torabito-win32-x64.exe"
                             target="_blank"
                             >64 bit</a
                           >
                           <a
-                            href="./releases/torabito-win32-x86.exe"
+                            href="https://github.com/yousefsami/torabito-installers/raw/master/torabito-win32-x86/torabito-win32-x86.exe"
                             target="_blank"
                             >32 bit</a
                           >
@@ -246,12 +246,12 @@
                         <td>.zip</td>
                         <td>
                           <a
-                            href="./releases/torabito-win32-x64.zip"
+                            href="https://github.com/yousefsami/torabito-installers/raw/master/torabito-win32-x64/torabito-win32-x64.zip"
                             target="_blank"
                             >64 bit</a
                           >
                           <a
-                            href="./releases/torabito-win32-x86.zip"
+                            href="https://github.com/yousefsami/torabito-installers/raw/master/torabito-win32-x86/torabito-win32-x86.zip"
                             target="_blank"
                             >32 bit</a
                           >
@@ -1647,29 +1647,32 @@
     });
 
     var OSName = 'Windows';
-    var OSHref = 'windows-x86.exe';
+    var OSHref =
+      'https://github.com/yousefsami/torabito-installers/raw/master/torabito-win32-x64/torabito-win32-x64.exe';
     if (navigator.appVersion.indexOf('Win') != -1) {
       OSName = 'Windows';
       if (
         navigator.userAgent.indexOf('Win64') != -1 &&
         navigator.userAgent.indexOf('x64') != -1
       ) {
-        OSHref = 'windows-x64.exe';
+        OSHref =
+          'https://github.com/yousefsami/torabito-installers/raw/master/torabito-win32-x64/torabito-win32-x64.exe';
       } else {
-        OSHref = 'windows-x86.exe';
+        OSHref =
+          'https://github.com/yousefsami/torabito-installers/raw/master/torabito-win32-x86/torabito-win32-x86.exe';
       }
     }
     if (navigator.appVersion.indexOf('Mac') != -1) {
       OSName = 'MacOS';
-      OSHref = 'maxos.pkg';
+      OSHref = 'releases/torabito-darwin-x64.pkg';
     }
     if (navigator.appVersion.indexOf('X11') != -1) {
       OSName = 'UNIX';
-      OSHref = 'unix.rpm';
+      OSHref = '#';
     }
     if (navigator.appVersion.indexOf('Linux') != -1) {
       OSName = 'Linux';
-      OSHref = 'linux.deb';
+      OSHref = '#';
     }
 
     document
