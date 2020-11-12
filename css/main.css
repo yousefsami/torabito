@@ -416,6 +416,25 @@ strong {
   color: #2b78fd;
 }
 
+.contact-us-wrapper {
+  text-align: center;
+  overflow: hidden;
+  padding: 4rem 0 2rem;
+}
+
+.contact-us-wrapper .item-box img {
+  width: 50px;
+}
+
+.contact-us-wrapper .item-box p {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.contact-us-wrapper .item-box a {
+  color: #212529;
+}
+
 /*@All Media queries*/
 @media (min-width: 768px) {
   .slide-wrapper {
